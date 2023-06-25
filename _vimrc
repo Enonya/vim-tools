@@ -61,6 +61,7 @@ call plug#begin('C:/Program\ Files (x86)/Vim/vimfiles/plugged')
 call plug#end()
 
 packadd termdebug
+let g:vim_markdown_math = 1
 
 let g:NERDCreateDefaultMappings = 1
 let g:NERDSpaceDelims = 1
