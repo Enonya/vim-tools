@@ -1,2 +1,3 @@
 # vim-tools
-Some tools to improve my vim.
+
+Some tools for improving my vim.
