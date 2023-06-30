@@ -54,14 +54,12 @@ func Bteqwq()
 endfunc
 
 call plug#begin('C:/Program\ Files (x86)/Vim/vimfiles/plugged')
-	Plug 'preservim/vim-markdown'
 	Plug 'preservim/nerdcommenter'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 call plug#end()
 
 packadd termdebug
-let g:vim_markdown_math = 1
 
 let g:NERDCreateDefaultMappings = 1
 let g:NERDSpaceDelims = 1
@@ -96,6 +94,8 @@ endfunc
 
 map <F9> <ESC>:call EnableTransparency()<CR>
 map <F10> <ESC>:call DisableTransparency()<CR>
+map <F11> <ESC>:syntax off<CR>
+map <F12> <ESC>:syntax on<CR>
 
 exec 'cd ' . fnameescape('D:/Informatics')
 
