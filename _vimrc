@@ -54,6 +54,7 @@ func Bteqwq()
 endfunc
 
 call plug#begin('C:/Program\ Files (x86)/Vim/vimfiles/plugged')
+	Plug 'terryma/vim-smooth-scroll'
 	Plug 'preservim/nerdcommenter'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
@@ -84,6 +85,11 @@ nmap <leader>n :tabnew<CR>
 nmap <leader>tg :GitTerm<CR>
 nmap <leader>tc :terminal<CR>
 " 记得加 PATH
+
+nmap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 1)<CR>
+nmap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 1)<CR>
+nmap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 1)<CR>
+nmap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 1)<CR>
 
 func EnableTransparency()
   silent exec libcallnr("vimtweak.dll", "SetAlpha", 200)
