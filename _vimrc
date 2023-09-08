@@ -14,8 +14,8 @@ set autoread autochdir
 set autoindent tabstop=4 shiftwidth=4 softtabstop=4
 set backspace=indent,eol,start
 set encoding=utf-8
-set guifont=JetBrainsMono_NFM_Light:h14:cANSI
-set guifontwide=Hurmit\ Nerd\ Font\ Mono\ Light:h14:cANSI
+set guifont=Sarasa\ Mono\ CL\ Nerd\ Font:h14:W200:cANSI
+set guifontwide=Sarasa\ Mono\ CL\ Nerd\ Font:h14:W200:cANSI
 set guioptions-=T guioptions-=R guioptions-=L guioptions-=r guioptions-=l guioptions-=b guioptions-=m
 
 let g:netrw_cursor=0
