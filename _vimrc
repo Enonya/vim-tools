@@ -91,7 +91,7 @@ let g:NERDToggleCheckAllLines = 1
 let g:clap_theme = 'yuyuko_clap'
 
 command! W :Clap windows
-command! GitTerm :term bash.exe --login -i
+command! GitTerm :vert term bash.exe --login -i
 
 nmap F :e ./<CR>
 nmap f :Clap files<CR>
